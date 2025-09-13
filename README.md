@@ -27,12 +27,16 @@ On Linux you need:
 How to run
 ----------
 1. Clone this repository or download the files.
-2. Install dependencies:
+2. Install dependencies:\
+   ```bash
        pip install flask
-3. Run the server:
+   ```
+4. Run the server:
+      ```bash
        python controlMain.py
-4. Get your PC IP address (ipconfig on Windows, ifconfig on Linux).
-5. From your phone (same WiFi), open:
+   ```
+6. Get your PC IP address (ipconfig on Windows, ifconfig on Linux).
+7. From your phone (same WiFi), open:
        http://<your_pc_ip>:5000
 
 Usage
