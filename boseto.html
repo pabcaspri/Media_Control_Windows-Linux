@@ -1,0 +1,78 @@
+HTML = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0b0f14;
+        font-family: system-ui, sans-serif;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+        grid-template-rows: repeat(4, 1fr); /* 4 rows */
+        gap: 16px;
+        width: 90vw;
+        height: 85vh;
+    }
+    form {
+        margin: 0;
+        height: 100%;
+    }
+    button {
+        width: 100%;
+        height: 100%;
+        background: #1a2430;
+        color: #e6edf3;
+        border: none;
+        border-radius: 16px;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 0.1s ease, background 0.2s ease;
+    }
+    button:active {
+        transform: scale(0.95);
+        background: #243344;
+    } </style>
+</head>
+<body>
+
+ <div class="grid">
+    <form action="/backward" method="post">
+      <button>⬅ Backward</button>
+    </form>
+    <form action="/forward" method="post">
+      <button>Forward ➡</button>
+    </form>
+    <form action="/lock" method="post">
+      <button>🔒 Lock</button>
+    </form>
+    <form action="/up" method="post">
+      <button>🔊 Vol +</button>
+    </form>
+    <form action="/sleep" method="post">
+      <button>😴 Sleep</button>
+    </form>
+    <form action="/down" method="post">
+      <button>🔉 Vol -</button>
+    </form>
+    <form action="/playpause" method="post">
+      <button>⏯ Play / Pause</button>
+    </form>
+    <form action="/mute" method="post">
+      <button>🔇 Mute</button>
+    </form>
+  </div>
+
+  </body>
+</html>
