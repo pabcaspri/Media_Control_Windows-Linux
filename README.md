@@ -37,8 +37,9 @@ How to run
    ```
 6. Get your PC IP address (ipconfig on Windows, ifconfig on Linux).
 7. From your phone (same WiFi), open:
+      ```bash
        http://<your_pc_ip>:5000
-
+   ```
 Usage
 -----
 The web page will show 8 buttons in a grid:
